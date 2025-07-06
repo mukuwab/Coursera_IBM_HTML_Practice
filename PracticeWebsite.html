@@ -17,27 +17,48 @@
 
         <h1>IBM Growth Over Years:</h1>
         <table>
-            <tr>
-                <th>Year </th>
+            <tr><!--tr stands for table row. This defines the first row of the table in this case.-->
+                <th>Year </th><!--th means table header, it will have the h1 font type within the table-->
                 <th>No. of Employees </th>
                 <th>Gross Income (In m$) </th>
             </tr>
-            <tr>
-                <td>1925</td>
+            <tr><!--this defines the 2nd table row...-->
+                <td>1925</td><!--td stands for table data, will have the p font type within the table-->
                 <td>3698</td>
                 <td>13</td>
             </tr>
-            <tr>
+            <tr><!--This defines the 3rd table row-->
                 <td>1930</td>
                 <td>6346</td>
                 <td>19 </td>
             </tr>
-            <tr>
+            <tr><!--This defines the fourth table row-->
                 <td>1935</td>
                 <td>8651</td>
                 <td>21</td>
             </tr>
             
         </table>
+        <h2>Insights Submission Form</h2>
+        <form action="/submit-feedback" method="POST">
+            <fieldset>
+                <legend>Your Insights About Thomas J. Watson Are Valued</legend>
+        
+                <!-- Name Field -->
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        
+                <!-- Email Field -->
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        
+                <!-- Comments Field -->
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Share your thoughts about Thomas J. Watson"></textarea><br><br>
+        
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
     </body>
 </html>
